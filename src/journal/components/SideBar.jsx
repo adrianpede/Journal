@@ -1,22 +1,24 @@
 
-import { TurnedInNot } from "@mui/icons-material"
+
 import { Box,Divider,Drawer, Grid, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material"
+import { TurnedInNot } from "@mui/icons-material"
 
 
-
-export const SideBar = ({drawerWidth = 240}) => {
+export const SideBar = ({drawerWidth }) => {
   return (
     <Box
     component='nav'
-    sx={{with: {sm:drawerWidth}, flexShrink:{sm:0}}}
+    sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+    
     >
         <Drawer
-        variant="permanent"
+        variant="permanent" // temporary 
         open
-        sx={{
-            display:{xs:'block'},
-            '& .MuiDrawer-paper': {boxSizing:'border-box', width:drawerWidth}
+        sx={{ 
+            display: { xs: 'block' },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth }
         }}
+        
         >
             <Toolbar>
                 <Typography variant="h6" noWrap component='div'>
