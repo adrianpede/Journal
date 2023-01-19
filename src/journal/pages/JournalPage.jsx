@@ -13,9 +13,9 @@ export const JournalPage = () => {
     <JournalLayout>
       {/*<Typography >.Sint deserunt fugiat ullamco culpa nulla velit reprehenderit adipisicing anim proident.</Typography>*/}
       
-      {/*<NothingSelectedView/>*/}
+      <NothingSelectedView/>
 
-     <NoteView/>
+     {/*<NoteView/>*/}
 
       <IconButton
       size='large'
