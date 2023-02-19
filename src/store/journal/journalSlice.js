@@ -30,6 +30,7 @@ name: 'journal',
 
     },
     setNotes: (state, action) => {
+        state.notes = action.payload;
 
     },
     setSaving: (state, action) => {
