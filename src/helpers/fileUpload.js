@@ -1,4 +1,4 @@
-import { async } from "@firebase/util";
+//import { async } from "@firebase/util";
 
 
 export const fileUpload = async(file) => {
