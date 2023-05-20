@@ -1,3 +1,3 @@
-//import "whatwg-fetch"
+import "whatwg-fetch";
+import 'setimmediate';
 
-import 'isomorphic-fetch';
