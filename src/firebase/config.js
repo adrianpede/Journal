@@ -4,7 +4,7 @@ import {getAuth} from 'firebase/auth';
 import {Firestore, getFirestore} from 'firebase/firestore/lite';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
+console.log(import.meta.env);
 // Your web app's Firebase configuration
 // deb/prod
 /*const firebaseConfig = {
