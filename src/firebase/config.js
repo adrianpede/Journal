@@ -6,8 +6,15 @@ import { getEnvironments } from "../helpers/getEnvironments";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-const env = getEnvironments();
-console.log(env)
+const {
+  VITE_APIKEY,
+  VITE_AUTHDOMAIN,
+  VITE_PROJECTID,
+  VITE_STORAGEBUCKET,
+  VITE_MESSAGINGSENDERID,
+  VITE_APPID,
+} = getEnvironments();
+
 //console.log(process.env);
 //console.log(import.meta.env);
 // Your web app's Firebase configuration
@@ -21,7 +28,7 @@ console.log(env)
   appId: "1:778048932455:web:cff7fb0f4610f4c5db22c2"
 };*/
 
-// testing
+/* testing
 const firebaseConfig = {
   apiKey: "AIzaSyDtTmeLU_0_E1hNCHkIk3EuAisvCDHn1rg",
   authDomain: "react-firebase-testing-f5483.firebaseapp.com",
@@ -30,7 +37,17 @@ const firebaseConfig = {
   messagingSenderId: "1027891679133",
   appId: "1:1027891679133:web:d9d79e930a8f1076312974"
 };
+*/
 
+const firebaseConfig = {
+  apiKey: VITE_APIKEY, 
+  authDomain: VITE_AUTHDOMAIN, 
+  projectId:  VITE_PROJECTID,
+  storageBucket: VITE_STORAGEBUCKET,
+  messagingSenderId: VITE_MESSAGINGSENDERID,
+  appId: VITE_APPID, 
+};
+console.log(firebaseConfig);
 // Initialize Firebase
 export const firebaseApp = initializeApp(firebaseConfig);
 
